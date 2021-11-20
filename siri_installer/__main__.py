@@ -28,7 +28,7 @@ def connect (api):
     return heroku_conn
 
 def createApp (connect):
-    appname = "siriuserbot" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
+    appname = "legenduserbot" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
     try:
         connect.create_app(name=appname, stack_id_or_name='container', region_id_or_name="eu")
     except requests.exceptions.HTTPError:
@@ -63,7 +63,7 @@ async def oturumacvebotlogolustur (stri, aid, ahash):
         await Client.start()
         ms = await Client.send_message('me',LANG['SIRIUSERBOT'])
         KanalId = await Client(CreateChannelRequest(
-            title='SiriUserBot BotLog',
+            title='LegendUserBot BotLog',
             about=LANG['AUTO_BOTLOG'],
             megagroup=True
         ))
@@ -107,8 +107,8 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
 
-    SyperStringKey = "SiriUserBot"
-    GiperStringKey = "robotlog/"
+    SyperStringKey = "LegendUserBot"
+    GiperStringKey = "HerLockDev/"
     InvalidKey = "http://github.com/" 
     str1 = InvalidKey+GiperStringKey+SyperStringKey
 
@@ -130,7 +130,7 @@ if __name__ == "__main__":
     config['CLEAN_WELCOME'] = "True"
     config['CONSOLE_LOGGER_VERBOSE'] = "False"
     config['COUNTRY'] = COUNTRY
-    config['DEFAULT_BIO'] = "✨ @SiriUserBot"
+    config['DEFAULT_BIO'] = "✨ @LegendUserBot"
     config['DEFAULT_NAME'] = "Sahip"
     config['LANGUAGE'] = LANGUAGE
     config['GALERI_SURE'] = "60"
@@ -146,7 +146,7 @@ if __name__ == "__main__":
     config['TMP_DOWNLOAD_DIRECTORY'] = "./downloads/"
     config['TZ'] = TZ
     config['TZ_NUMBER'] = "1"
-    config['UPSTREAM_REPO_URL'] = "https://github.com/robotlog/SiriUserBot"
+    config['UPSTREAM_REPO_URL'] = "https://github.com/HerLockDev/LegendUserBot"
 
     config['WARN_LIMIT'] = "3"
     config['WARN_MODE'] = "gmute"
