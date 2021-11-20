@@ -100,8 +100,8 @@ def main():
             bilgi(LANG['NEW_APP'])
             hashh = soup.find("input", {"name": "hash"}).get("value")
             bilgi("🔄 Uygulama Oluşturuluyor..")
-            app_title = choice(["sir", "siri", "tg", "madelineproto", "telethon", "pyrogram"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
-            app_shortname = choice(["sir", "siri", "tg", "madelineproto", "telethon", "pyrogram"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
+            app_title = choice(["legen", "legend", "tg", "madelineproto", "telethon", "pyrogram"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
+            app_shortname = choice(["legen", "legend", "tg", "madelineproto", "telethon", "pyrogram"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
             AppInfo = {
                 "hash": hashh,
                 "app_title": app_title,
@@ -129,8 +129,8 @@ def main():
             except IndexError:
                 AppInfo = {
                     "hash": hashh,
-                    "app_title": 'siribot',
-                    "app_shortname": 'siribot',
+                    "app_title": 'legendbot',
+                    "app_shortname": 'legendbot',
                     "app_url": "",
                     "app_platform": choice(["ios", "web", "desktop"]),
                     "app_desc": choice(["madelineproto", "pyrogram", "telethon", "", "web", "cli"])
